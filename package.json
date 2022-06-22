@@ -1,0 +1,19 @@
+{
+  "name": "link-shortener",
+  "version": "1.0.0",
+  "description": "Simple link shortener",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "latest",
+    "express": "latest",
+    "express-hbs": "latest",
+    "hbs": "latest",
+    "quick.db": "latest"
+  }
+}

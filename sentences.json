@@ -1,0 +1,17 @@
+{
+  "link": "Short link: %context%",
+  "invalid": "This is not a valid link!",
+  "enterlink": "Enter the link you want to shorten.",
+  "subject": "Link Shortener",
+  "title": "Link Shortener",
+  "themes": {
+    "light": "Light Theme",
+    "dark": "Dark Theme",
+    "unset": "Switch Theme"
+  },
+  "error": {
+    "title": "Link Not Found",
+    "context": "The short link you are trying to reach does not point to a link."
+  },
+  "output": ""
+}
