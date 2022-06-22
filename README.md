@@ -1,5 +1,5 @@
 # Link Shortener
-Simple link shortener wrote with Node.js
+Simple link shortener written with Node.js
 
 ## Get started
 Install all required dependencies
