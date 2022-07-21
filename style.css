@@ -2,6 +2,7 @@
     --background-color: white;
     --foreground-color: black;
     --second-background-color: #ededed;
+    --shadow-color: black;
   }
 
   [data-theme="light"] {
