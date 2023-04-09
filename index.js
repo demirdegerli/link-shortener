@@ -42,7 +42,7 @@ const urlregex = /(https?:\/\/)(.*\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}(\.[a-z]{2,6}
       if(!(req.body.link.toLowerCase().startsWith("http://") || req.body.link.toLowerCase().startsWith("https://"))) req.body.link = "http://" + req.body.link
       if(!isValidUrl(req.body.link) && !isValidUrl(req.body.link)) {
         sentences.output = sentences.invalid
-        res.render(__dirname + "/" + "page.hbs", sentences)
+        res.status(422).render(__dirname + "/" + "page.hbs", sentences)
         return
       }
       let all = await dball()
@@ -73,7 +73,7 @@ const urlregex = /(https?:\/\/)(.*\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}(\.[a-z]{2,6}
   
   app.get('/:shortcode', async (req, res) => {
       if(!req.params || !req.params.shortcode) return
-      if(!await dbhas(req.params.shortcode)) return res.render(__dirname + "/" + "error.hbs", sentences)
+      if(!await dbhas(req.params.shortcode)) return res.status(404).render(__dirname + "/" + "error.hbs", sentences)
       res.redirect(await dbget(req.params.shortcode))
   })
   
